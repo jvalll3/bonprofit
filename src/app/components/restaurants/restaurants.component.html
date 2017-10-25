@@ -1,0 +1,11 @@
+<div class="card-columns">
+  <div class="card div-pic-1 puntero" *ngFor="let restaurant of restaurants"
+    (click)="detallsRestaurant(restaurant.id)">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{ restaurant.nom }}</h4>
+      <p class="card-text">{{ restaurant.id }} This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>

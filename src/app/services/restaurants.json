@@ -1,0 +1,16 @@
+{
+  "restaurants": [
+    {
+      "id" : 1,
+      "nom" : "Restaurant A"
+    },
+    {
+      "id" : 2,
+      "nom" : "Restaurant B"
+    },
+    {
+      "id" : 3,
+      "nom" : "Restaurant C"
+    },
+  ]
+}
