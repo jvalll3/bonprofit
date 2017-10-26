@@ -56,15 +56,23 @@ export class RestaurantsService {
     console.log("Service ready!")
   }
 
+<<<<<<< HEAD
   getRestaurants(){
     /*let url = 'restaurants.json';
     return this.jsonp.get(url).map( res=> res.json());*/
+=======
+  getRestaurants():Restaurant[]{
+>>>>>>> 07c0ad2e99a872ed034f20939e187626e20e4fb8
     return this.restaurants;
   }
 
   getRestaurant(id:number){
     //return this.restaurants[0].map(res=>res.json());
+<<<<<<< HEAD
     return this.restaurants[id];
+=======
+    return this.restaurants[0];
+>>>>>>> 07c0ad2e99a872ed034f20939e187626e20e4fb8
   }
 
 }
