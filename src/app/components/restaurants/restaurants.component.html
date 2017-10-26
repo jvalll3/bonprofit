@@ -1,11 +1,53 @@
-<div class="card-columns">
-  <div class="card div-pic-1 puntero" *ngFor="let restaurant of restaurants"
-    (click)="detallsRestaurant(restaurant.id)">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">{{ restaurant.nom }}</h4>
-      <p class="card-text">{{ restaurant.id }} This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<div class="row">
+  <div class="col-sm-2">
+    <form>
+      <div class="form-group">
+        <button type="button" class="btn btn-outline-success">Veure al mapa</button>
+      </div>
+      <div class="form-group">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ordenar per...
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Classificació</a>
+            <a class="dropdown-item" href="#">Opinions</a>
+            <a class="dropdown-item" href="#">Popularitat</a>
+            <a class="dropdown-item" href="#">Novetats</a>
+            <a class="dropdown-item" href="#">Preu mitjà</a>
+            <a class="dropdown-item" href="#">Preu de + a -</a>
+            <a class="dropdown-item" href="#">Preu de - a +</a>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="dropdown show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Franja horària
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item">Esmorzar</a>
+            <a class="dropdown-item">Dinar</a>
+            <a class="dropdown-item">Sopar</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-10">
+    <div class="card-columns">
+      <div class="card" *ngFor="let restaurant of restaurants"
+        (click)="detallsRestaurant(restaurant.id)">
+        <div class="card-body">
+          <h4 class="card-title">{{ restaurant.nom }}</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-success">Mapa</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

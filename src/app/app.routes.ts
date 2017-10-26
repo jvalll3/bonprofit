@@ -4,6 +4,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
 import { LoginComponent } from './login/login.component';
+import { ValorarComponent } from './components/valorar/valorar.component';
 
 const app_routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -11,6 +12,7 @@ const app_routes: Routes = [
   { path: 'restaurants', component: RestaurantsComponent },
   { path: 'restaurant/:id', component: RestaurantComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'valorar', component: ValorarComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

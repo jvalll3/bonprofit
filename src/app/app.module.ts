@@ -15,6 +15,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
 
 import { RestaurantsService } from './services/restaurants.service';
+import { ValorarComponent } from './components/valorar/valorar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RestaurantsService } from './services/restaurants.service';
     LoginComponent,
     NavbarComponent,
     BuscarComponent,
-    RestaurantsComponent
+    RestaurantsComponent,
+    ValorarComponent
   ],
   imports: [
     BrowserModule,
