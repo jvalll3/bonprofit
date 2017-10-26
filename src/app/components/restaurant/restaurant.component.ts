@@ -19,7 +19,6 @@ export class RestaurantComponent implements OnInit {
     this.activatedRoute.params.subscribe( parametros=>{
       this.restaurant = _rs.getRestaurant(parametros['id']-1);
     })
-
   }
 
   ngOnInit() {
