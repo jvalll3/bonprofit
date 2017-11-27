@@ -8,47 +8,80 @@ export class RestaurantsService {
   private restaurants:Restaurant[] = [
     {
       id: 1,
-      nom: "Restaurant A"
+      nom: "Restaurant A",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 4,
     },
     {
       id: 2,
-      nom: "Restaurant B"
+      nom: "Restaurant B",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 3,
     },
     {
       id: 3,
-      nom: "Restaurant C"
+      nom: "Restaurant C",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 5,
     },
     {
       id: 4,
-      nom: "Restaurant D"
+      nom: "Restaurant D",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 1,
     },
     {
       id: 5,
-      nom: "Restaurant E"
+      nom: "Restaurant E",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 3,
     },
     {
       id: 6,
-      nom: "Restaurant F"
+      nom: "Restaurant F",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 4,
     },
     {
       id: 7,
-      nom: "Restaurant G"
+      nom: "Restaurant G",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 5,
     },
     {
       id: 8,
-      nom: "Restaurant H"
+      nom: "Restaurant H",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 4,
     },
     {
       id: 9,
-      nom: "Restaurant I"
+      nom: "Restaurant I",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 2,
     },
     {
       id: 10,
-      nom: "Restaurant J"
+      nom: "Restaurant J",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 2,
     },
     {
       id: 11,
-      nom: "Restaurant K"
+      nom: "Restaurant K",
+      poblacio: "Reus",
+      cp: 43204,
+      rate: 1,
     }
   ];
 
@@ -72,4 +105,7 @@ export class RestaurantsService {
 export interface Restaurant {
   id: number;
   nom: string;
+  poblacio: string;
+  cp: number;
+  rate: number;
 };

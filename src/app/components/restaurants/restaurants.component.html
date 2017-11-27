@@ -108,7 +108,7 @@
         <div class="card-body" (click)="detallsRestaurant(restaurant.id)">
           <h4 class="card-title">{{ restaurant.nom }}</h4>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <span class="badge badge-primary">8 / 10</span>
+          <p>Valoració: <span class="badge badge-primary">{{restaurant.rate}} / 5</span></p>
         </div>
         <div class="card-footer">
           <button type="button" class="btn btn-success" (click)="goToMapa(restaurant.id)">Mapa</button>

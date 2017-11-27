@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import {Location} from '@angular/common';
+import { Location } from '@angular/common';
 import { RestaurantsService, Restaurant } from '../../services/restaurants.service';
 import { OpinionsService, Opinion } from '../../services/opinions.service';
 
@@ -13,7 +13,10 @@ export class RestaurantComponent implements OnInit {
 
   restaurant:Restaurant = {
     id : 1,
-    nom: "Restaurant A"
+    nom: "Restaurant A",
+    poblacio: "Reus",
+    cp: 43204,
+    rate: 4
   }
 
   opinions:Opinion[] = [];
@@ -39,6 +42,10 @@ export class RestaurantComponent implements OnInit {
 
   goBack(){
     this.router.navigate(['/restaurants']);
+  }
+
+  goToBookingForm(id:number){
+    this.router.navigate(['reservar',id]);
   }
 
 }

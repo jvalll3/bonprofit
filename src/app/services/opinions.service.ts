@@ -9,35 +9,35 @@ export class OpinionsService {
       user: "User 1",
       idRestaurant: 1,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      rate: 8,
+      rate: 4,
     },
     {
       id: 2,
       user: "User 2",
       idRestaurant: 3,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      rate: 8,
+      rate: 3,
     },
     {
       id: 3,
       user: "User 3",
       idRestaurant: 2,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      rate: 8,
+      rate: 2,
     },
     {
       id: 4,
       user: "User 4",
       idRestaurant: 1,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      rate: 8,
+      rate: 5,
       },
     {
       id: 5,
       user: "User 5",
       idRestaurant: 3,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      rate: 8,
+      rate: 1,
     }
   ];
 
