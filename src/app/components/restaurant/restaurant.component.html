@@ -1,3 +1,32 @@
 <div *ngIf="restaurant">
   <h1>{{ restaurant.nom }} </h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
+      <img src="assets/img/res1.jpg" class="img-thumbnail img-fluid">
+      <div class="card" *ngFor="let opinion of opinions">
+        <div class="card-body">
+          <h4 class="card-title">{{opinion.user}}</h4>
+          <p class="card-text">{{opinion.text}}.</p>
+          <div class="text-muted">2 days agp</div>
+          <span class="badge badge-primary">{{opinion.rate}} / 10</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <h3>Descripció</h3>
+      <p class="text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h3>Carta</h3>
+      <p class="text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <!-- <p>Popularidad: <span [ngClass]="{'badge badge-primary': ((pelicula.popularity | nota) >= 8), 'badge badge-warning': ((pelicula.popularity | nota) >= 5 && (pelicula.popularity | nota) < 8), 'badge badge-danger': (pelicula.popularity | nota) < 5}">{{ pelicula.popularity | nota }}/10</span></p> -->
+      <!-- <p>Popularidad: <span [ngClass]="badgeClass">{{ pelicula.popularity | nota }} / 10</span></p> -->
+      <p>Valoració: <span class="badge badge-primary">8 / 10</span></p>
+      <button type="button" class="btn btn-outline-success" (click)="goToOpinionForm(restaurant.id)">Valorar</button>
+      <button type="button" class="btn btn-outline-danger" (click)="goBack()">Tornar</button>
+    </div>
+  </div>
 </div>

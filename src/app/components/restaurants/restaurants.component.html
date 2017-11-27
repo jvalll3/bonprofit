@@ -1,8 +1,8 @@
 <div class="row">
-  <div class="col-sm-2">
+  <div class="col-sm-3">
     <form>
       <div class="form-group">
-        <button type="button" class="btn btn-outline-success">Veure al mapa</button>
+        <button type="button" class="btn btn-outline-success" (click)="goToMapa(1)">Veure al mapa</button>
       </div>
       <div class="form-group">
         <div class="dropdown">
@@ -33,19 +33,85 @@
           </div>
         </div>
       </div>
+      <div class="form-group">
+        <div class="card">
+          <div class="card-header">
+            Dietes especials
+          </div>
+          <div class="card-body">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Per celíacs
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Per vegetarians
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Per vegetarians
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="card">
+          <div class="card-header">
+            Tipus de cuina
+          </div>
+          <div class="card-body">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Italiana
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Japonesa
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Mediterrània
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Mexicana
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                  Xinesa
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
   </div>
-  <div class="col-sm-10">
+  <div class="col-sm-9">
     <div class="card-columns">
-      <div class="card" *ngFor="let restaurant of restaurants"
-        (click)="detallsRestaurant(restaurant.id)">
-        <div class="card-body">
+      <div class="card" *ngFor="let restaurant of restaurants">
+        <img class="card-img-top" src="assets/img/res1.jpg" alt="Card image cap">
+        <div class="card-body" (click)="detallsRestaurant(restaurant.id)">
           <h4 class="card-title">{{ restaurant.nom }}</h4>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <span class="badge badge-primary">8 / 10</span>
         </div>
         <div class="card-footer">
-          <button type="button" class="btn btn-success">Mapa</button>
+          <button type="button" class="btn btn-success" (click)="goToMapa(restaurant.id)">Mapa</button>
         </div>
       </div>
     </div>

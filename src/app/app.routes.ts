@@ -5,6 +5,7 @@ import { RestaurantComponent } from './components/restaurant/restaurant.componen
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
 import { LoginComponent } from './login/login.component';
 import { ValorarComponent } from './components/valorar/valorar.component';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 const app_routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,7 +13,8 @@ const app_routes: Routes = [
   { path: 'restaurants', component: RestaurantsComponent },
   { path: 'restaurant/:id', component: RestaurantComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'valorar', component: ValorarComponent},
+  { path: 'valorar/:id', component: ValorarComponent},
+  { path: 'mapa/:id', component: MapaComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

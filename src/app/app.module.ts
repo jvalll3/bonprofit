@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { APP_ROUTING } from './app.routes';
 
@@ -13,9 +14,10 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
-
 import { RestaurantsService } from './services/restaurants.service';
+import { OpinionsService } from './services/opinions.service';
 import { ValorarComponent } from './components/valorar/valorar.component';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ValorarComponent } from './components/valorar/valorar.component';
     NavbarComponent,
     BuscarComponent,
     RestaurantsComponent,
-    ValorarComponent
+    ValorarComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,9 @@ import { ValorarComponent } from './components/valorar/valorar.component';
     APP_ROUTING
   ],
   providers: [
-    RestaurantsService
+    RestaurantsService,
+    OpinionsService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

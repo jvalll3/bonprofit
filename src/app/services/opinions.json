@@ -1,0 +1,22 @@
+{
+  "opinions": [
+    {
+      "id" : 1,
+      "user" : "User 1",
+      "text" : "Restaurant A",
+      "rate" : 8
+    },
+    {
+      "id" : 2,
+      "user" : "User 2",
+      "text" : "Restaurant B",
+      "rate" : 5
+    },
+    {
+      "id" : 3,
+      "user" : "User 3",
+      "text" : "Restaurant C",
+      "rate" : 3
+    },
+  ]
+}

@@ -25,4 +25,8 @@ export class RestaurantsComponent implements OnInit {
     this.router.navigate(['/restaurant',id]);
   }
 
+  goToMapa(id:number){
+    this.router.navigate(['/mapa',id]);
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-valorar',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValorarComponent implements OnInit {
 
-  constructor() { }
+  idRestaurant:number = 1;
+
+  constructor(private activatedRoute: ActivatedRoute,
+    private router:Router) {
+      this.activatedRoute.params.subscribe( parametros=>{
+        this.idRestaurant = parametros['id'];
+      })
+  }
 
   ngOnInit() {
+
+  }
+  returnToRestaurant(){
+    this.router.navigate(['/restaurant',this.idRestaurant]);
   }
 
 }
