@@ -18,6 +18,7 @@ import { RestaurantsService } from './services/restaurants.service';
 import { OpinionsService } from './services/opinions.service';
 import { ValorarComponent } from './components/valorar/valorar.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { ReservarComponent } from './components/reservar/reservar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MapaComponent } from './components/mapa/mapa.component';
     BuscarComponent,
     RestaurantsComponent,
     ValorarComponent,
-    MapaComponent
+    MapaComponent,
+    ReservarComponent
   ],
   imports: [
     BrowserModule,
